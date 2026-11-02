@@ -1,0 +1,127 @@
+/* Custom styles for KabarNusantara */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for category tabs */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Category Pill Buttons */
+.cat-pill {
+  padding: 0.375rem 0.875rem;
+  border-radius: 9999px;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  color: #4b5563;
+  background-color: transparent;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid transparent;
+}
+
+.dark .cat-pill {
+  color: #94a3b8;
+}
+
+.cat-pill:hover {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.dark .cat-pill:hover {
+  background-color: #1e293b;
+  color: #f8fafc;
+}
+
+.cat-pill.active {
+  background-color: #dc2626;
+  color: #ffffff;
+  border-color: #dc2626;
+  box-shadow: 0 4px 6px -1px rgba(220, 38, 38, 0.2), 0 2px 4px -2px rgba(220, 38, 38, 0.1);
+}
+
+.dark .cat-pill.active {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+/* Breaking News Ticker Animation */
+@keyframes ticker {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.ticker-content {
+  display: inline-block;
+  animation: ticker 40s linear infinite;
+}
+
+.ticker-content:hover {
+  animation-play-state: paused;
+}
+
+/* Line Clamp Utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Card Image Hover zoom */
+.news-card-img {
+  transition: transform 0.4s ease-out;
+}
+.news-card:hover .news-card-img {
+  transform: scale(1.05);
+}
+
+/* Custom Scrollbar for Modal and Desktop */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Reading Progress Indicator */
+#reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #dc2626;
+  z-index: 60;
+  width: 0%;
+  transition: width 0.1s ease;
+}
