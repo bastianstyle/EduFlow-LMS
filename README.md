@@ -1,4 +1,4 @@
-# EduFlow — Production Learning Management System (LMS)
+# EduFlow — Learning Management System
 
 [![Next.js 14](https://img.shields.io/badge/Next.js-14.2-black?style=flat&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-blue?style=flat&logo=typescript)](https://www.typescriptlang.org/)
@@ -6,16 +6,22 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8?style=flat&logo=tailwindcss)](https://tailwindcss.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-EduFlow is an enterprise-grade, full-stack web Learning Management System (LMS) engineered with Next.js 14 App Router, TypeScript, Prisma ORM, and Tailwind CSS. The platform delivers specialized, role-specific experiences for **Students**, **Instructors**, and **Administrators**, featuring interactive video learning, quiz engines with countdown timers, assignment submission & grading suites, automated completion certificate issuance with public cryptographic verification, and governance dashboards.
+EduFlow is a full-stack Learning Management System (LMS) built with Next.js 14, TypeScript, Prisma, and Tailwind CSS. It brings students, instructors, and administrators together in one platform for online courses, progress tracking, quizzes, assignments, certificates, and course administration.
+
+<p align="center">
+  <img src="docs/images/eduflow-dashboard.svg" alt="EduFlow dashboard preview showing course progress, weekly learning activity, and courses in progress" width="100%">
+  <br>
+  <sub>Illustrative dashboard preview, not a live application screenshot.</sub>
+</p>
 
 ---
 
-## 📸 Key Interfaces & Visual Design
+## ✨ Project Overview
 
-- **Student Portal**: Interactive video/document curriculum player, live learning progress tracking, quiz runners with timed assessments, assignment submissions, and downloadable/printable graduation certificates.
-- **Instructor Suite**: Course creation studio, section & lesson builder, question bank authoring, student project evaluation & grading drawer with feedback.
-- **Admin Governance**: Platform-wide telemetry, course quality moderation pipeline (Approval / Rejection / Archival), user role assignments, category taxonomy management, and immutable audit logs.
-- **Public Credential Verification**: Real-time public verification system for issued certificates (`/verify/[code]`) with print & PDF export capabilities.
+- **Student portal** for browsing courses, following lessons, tracking progress, taking quizzes, submitting assignments, and viewing certificates.
+- **Instructor tools** for creating courses and curriculum, managing quizzes, and reviewing student submissions.
+- **Admin dashboard** for managing users, course approvals, categories, analytics, and platform activity.
+- **Certificate verification** page for looking up issued certificates.
 
 ---
 
